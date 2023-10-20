@@ -1,0 +1,146 @@
+/* CSS Pagina Inicial Do Encuartador */
+
+.container-home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.logo span {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 230px;
+  height: 230px;
+}
+
+@keyframes inputAreaEntrance {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.input-area {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: inputAreaEntrance 3s ease forwards;
+}
+
+.input-area div {
+  width: 100%;
+  height: 46px;
+  background-color: #9665ff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.input-area svg {
+  margin: 0 8px;
+}
+
+.input-area input {
+  background: transparent;
+  border: 0;
+  height: 46px;
+  color: white;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.input-area input::placeholder {
+  color: white;
+}
+
+.input-area button {
+  width: 100%;
+  height: 46px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 16px;
+  color: #4525d2;
+  margin-top: 8px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.input-area button:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container-home {
+    padding: 10px;
+  }
+
+  .logo h1 {
+    font-size: 30px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  img {
+    width: 189px;
+    height: 161px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-home {
+    padding: 5px;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .logo span {
+    font-size: 18px; /* Reduza a fonte do texto para evitar que ele saia da tela em telas menores */
+  }
+
+  img {
+    width: 170px; /* Ajuste o tamanho da imagem para evitar que ela saia da tela */
+    height: auto;
+  }
+}
+
+body {
+  overflow: hidden;
+}

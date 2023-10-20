@@ -1,0 +1,15 @@
+.menu{
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    font-weight: bold;
+    display: flex;
+}
+
+.menu-text{
+    text-decoration: none;
+    color: #4525d2;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}

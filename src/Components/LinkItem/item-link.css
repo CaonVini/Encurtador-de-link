@@ -1,0 +1,69 @@
+.modal-container {
+  position: absolute;
+  bottom: 18px;
+  background-color: white;
+  padding: 14px;
+  max-width: 700px; 
+  width: 100%; 
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  animation: modalEntrance 0.5s ease-in-out forwards;
+}
+
+@keyframes modalEntrance {
+  0% {
+    bottom: -100px; /* Começa fora da tela */
+  }
+  100% {
+    bottom: 18px; /* Finaliza na posição desejada */
+  }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header button {
+  border: 0;
+  background-color: transparent;
+}
+
+.modal-container span {
+  margin: 14px 0;
+  color: #d9d9e3; 
+}
+
+.modal-link {
+  background-color: #9665ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  height: 38px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .modal-container {
+    margin-bottom: 70%;
+    padding: 10px; 
+  }
+
+  .modal-header h2 {
+    font-size: 18px; 
+  }
+
+  .modal-container span {
+    margin: 10px 0;
+  }
+
+  .modal-link {
+    height: 32px; 
+  }
+}
