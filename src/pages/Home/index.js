@@ -36,7 +36,7 @@ function Home() {
       <div className="logo">
         <img src="/logo.png" alt="Logo"></img>
         <h1>CAON LINKS</h1>
-        <span>fdkjsfkdsfkjlsdjkl! 👇🏼</span>
+        <span>Cole seu link para encurtar! 👇🏼</span>
       </div>
 
       <div className="input-area">
